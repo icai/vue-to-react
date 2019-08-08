@@ -1,5 +1,5 @@
 {
-    "name": "@icai/vue-to-react",
+    "name": "@w3cub/vue-to-react",
     "version": "1.1.0",
     "description": "Try to transform Vue component to React component",
     "author": "gidcai@gmail.com",
