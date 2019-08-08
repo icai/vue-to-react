@@ -15,7 +15,6 @@ const {
 } = require('./vue-ast-helpers');
 const { genSFCRenderMethod } = require('./sfc/sfc-ast-helpers');
 
-const output = require('./output');
 const traverseTemplate = require('./sfc/index');
 
 const state = {
