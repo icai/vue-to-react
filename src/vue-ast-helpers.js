@@ -14,6 +14,7 @@ const nestedMethodsVisitor = {
     },
 
     ExpressionStatement (path) {
+        // bug, need detect this.xxx = aaa;
         const expression = path.node.expression;
         if (t.isAssignmentExpression(expression)) {
             const right = expression.right;
