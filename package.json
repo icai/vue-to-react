@@ -1,13 +1,13 @@
 {
     "name": "@w3cub/vue-to-react",
-    "version": "1.1.2",
+    "version": "1.2.1",
     "description": "Try to transform Vue component to React component",
     "author": "gidcai@gmail.com",
     "license": "MIT",
     "bin": {
         "vtr": "bin/vtr"
     },
-    "main": "src/transform.js",
+    "main": "src/transform",
     "files": [
         "src",
         "bin",
