@@ -4,7 +4,6 @@
     "description": "Try to transform Vue component to React component",
     "author": "gidcai@gmail.com",
     "license": "MIT",
-    "private": false,
     "bin": {
         "vtr": "bin/vtr"
     },
