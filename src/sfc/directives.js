@@ -206,5 +206,5 @@ exports.handleHTMLDirective = function handleHTMLDirective (path, value, state) 
                 )
             )
         )
-    )
+    );
 };
