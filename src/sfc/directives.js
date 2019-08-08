@@ -1,4 +1,4 @@
-const t = require('babel-types');
+const t = require('@babel/types');
 
 const { getNextJSXElment } = require('./sfc-ast-helpers');
 const { log, getIdentifier } = require('../utils');

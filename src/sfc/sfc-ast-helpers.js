@@ -1,4 +1,4 @@
-const t = require('babel-types');
+const t = require('@babel/types');
 
 exports.getNextJSXElment = function getNextJSXElment (path) {
     let nextElement = null;

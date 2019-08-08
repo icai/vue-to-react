@@ -1,6 +1,6 @@
 const babylon = require('babylon');
-const t = require('babel-types');
-const babelTraverse = require('babel-traverse').default;
+const t = require('@babel/types');
+const babelTraverse = require('@babel/traverse').default;
 
 const { log, getIdentifier } = require('../utils');
 const { 

@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
-const babylon = require('babylon');
-const babelTraverse = require('babel-traverse').default;
-const generate = require('babel-generator').default;
-const t = require('babel-types');
+const babylon = require("@babel/parser");
+const babelTraverse = require('@babel/traverse').default;
+const generate = require('@babel/generator').default;
+const t = require('@babel/types');
 const compiler = require('vue-template-compiler');
 
 const { initProps, initData, initComputed, initComponents } = require('./collect-state');
