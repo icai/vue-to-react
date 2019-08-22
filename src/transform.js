@@ -27,11 +27,6 @@ const cycle = {
     render: 'render'
 };
 
-const collect = { 
-    imports: [],
-    classMethods: {}
-};
-
 function formatContent (source, isSFC) {
     if (isSFC) {
         const res = compiler.parseComponent(source, { pad: 'line' });
@@ -55,6 +50,10 @@ module.exports = function transform (source, isSFC) {
         props: {},
         computeds: {},
         components: {}
+    };
+    const collect = { 
+        imports: [],
+        classMethods: {}
     };
     const component = formatContent(source, isSFC);
     const vast = babylon.parse(component.js, {
