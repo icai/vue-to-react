@@ -17,14 +17,6 @@ const { genSFCRenderMethod } = require('./sfc/sfc-ast-helpers');
 
 const traverseTemplate = require('./sfc/index');
 
-const state = {
-    name: undefined,
-    data: {},
-    props: {},
-    computeds: {},
-    components: {}
-};
-
 // Life-cycle methods relations mapping
 const cycle = {
     created: 'componentWillMount',
@@ -57,6 +49,13 @@ function formatContent (source, isSFC) {
 
 // AST for vue component
 module.exports = function transform (source, isSFC) {
+    const state = {
+        name: undefined,
+        data: {},
+        props: {},
+        computeds: {},
+        components: {}
+    };
     const component = formatContent(source, isSFC);
     const vast = babylon.parse(component.js, {
         sourceType: 'module',
