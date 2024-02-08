@@ -32,7 +32,7 @@ function formatContent (source, isSFC) {
         const res = compiler.parseComponent(source, { pad: 'line' });
         return {
             template: res.template.content.replace(/{{/g, '{').replace(/}}/g, '}'),
-            js: res.script.content.replace(/\/\//g, '')
+            js: res.script.content
         };
     } else {
         return {
